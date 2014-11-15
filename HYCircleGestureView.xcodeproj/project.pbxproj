@@ -14,6 +14,7 @@
 		D84A13B01A14E7110077FFB1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84A13AF1A14E7110077FFB1 /* Images.xcassets */; };
 		D84A13B31A14E7110077FFB1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D84A13B11A14E7110077FFB1 /* LaunchScreen.xib */; };
 		D84A13BF1A14E7110077FFB1 /* HYCircleGestureViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D84A13BE1A14E7110077FFB1 /* HYCircleGestureViewTests.m */; };
+		D84A13CA1A14ECE80077FFB1 /* HYCircleGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = D84A13C91A14ECE80077FFB1 /* HYCircleGesture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		D84A13B81A14E7110077FFB1 /* HYCircleGestureViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYCircleGestureViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D84A13BD1A14E7110077FFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D84A13BE1A14E7110077FFB1 /* HYCircleGestureViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYCircleGestureViewTests.m; sourceTree = "<group>"; };
+		D84A13C81A14ECE80077FFB1 /* HYCircleGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYCircleGesture.h; sourceTree = "<group>"; };
+		D84A13C91A14ECE80077FFB1 /* HYCircleGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYCircleGesture.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				D84A13A71A14E7110077FFB1 /* AppDelegate.m */,
 				D84A13A91A14E7110077FFB1 /* ViewController.h */,
 				D84A13AA1A14E7110077FFB1 /* ViewController.m */,
+				D84A13C81A14ECE80077FFB1 /* HYCircleGesture.h */,
+				D84A13C91A14ECE80077FFB1 /* HYCircleGesture.m */,
 				D84A13AC1A14E7110077FFB1 /* Main.storyboard */,
 				D84A13AF1A14E7110077FFB1 /* Images.xcassets */,
 				D84A13B11A14E7110077FFB1 /* LaunchScreen.xib */,
@@ -221,6 +226,7 @@
 			files = (
 				D84A13AB1A14E7110077FFB1 /* ViewController.m in Sources */,
 				D84A13A81A14E7110077FFB1 /* AppDelegate.m in Sources */,
+				D84A13CA1A14ECE80077FFB1 /* HYCircleGesture.m in Sources */,
 				D84A13A51A14E7110077FFB1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +350,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HYCircleGestureView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +361,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HYCircleGestureView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +420,7 @@
 				D84A13C41A14E7110077FFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D84A13C51A14E7110077FFB1 /* Build configuration list for PBXNativeTarget "HYCircleGestureViewTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +429,7 @@
 				D84A13C71A14E7110077FFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

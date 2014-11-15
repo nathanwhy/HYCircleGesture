@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HYCircleGesture.h"
 
 @interface ViewController ()
 
@@ -14,14 +15,16 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void) viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    HYCircleGesture *gesture = [[HYCircleGesture alloc] initWithTarget:self action:@selector(circleGesture:)];
+    gesture.isAnimation = YES;
+    [self.view addGestureRecognizer:gesture];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)circleGesture:(HYCircleGesture *)gesture {
+    NSLog(@"success");
 }
 
 @end
