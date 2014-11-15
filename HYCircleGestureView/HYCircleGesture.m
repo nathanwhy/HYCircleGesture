@@ -97,12 +97,11 @@ typedef enum direction {
     if (level==4 && ABS(newPoint.x-beginPoint.x)<30 && ABS(newPoint.y-beginPoint.y)<30) {
         level = 0;
         if ([self state] == UIGestureRecognizerStatePossible) {
-            [self setState:UIGestureRecognizerStateBegan];
-            [self setState:UIGestureRecognizerStateEnded];
-        }
-        if (self.isAnimation) {
-            [self setupLayer];
-            [self startCircleAnimation];
+            [self setState:UIGestureRecognizerStateRecognized];
+            if (self.isAnimation) {
+                [self setupLayer];
+                [self startCircleAnimation];
+            }
         }
     }
 }
@@ -113,7 +112,9 @@ typedef enum direction {
 }
 
 - (void)setupLayer {
-    self.strokeLayer = [CAShapeLayer layer];
+    if (_strokeColor == nil) {
+        self.strokeLayer = [CAShapeLayer layer];
+    }
     
     CGFloat endAngle = clockwise? (-0.2f-M_PI_2):(0.2f-M_PI_2);
     CGFloat radius = (mostRightPoint.x - mostLeftPoint.x) / 2;
